@@ -28,7 +28,7 @@ class CIJoe
     Dir.chdir(project_path)
 
     @user, @project = git_user_and_project
-    @url = "http://github.com/#{@user}/#{@project}"
+    @url = "http://git.exelab.eu/cgit.cgi/#{@project}/"
 
     @last_build = nil
     @current_build = nil

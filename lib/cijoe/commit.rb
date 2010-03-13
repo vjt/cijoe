@@ -1,7 +1,7 @@
 class CIJoe
   class Commit < Struct.new(:sha, :user, :project)
     def url
-      "http://github.com/#{user}/#{project}/commit/#{sha}"
+      "http://git.exelab.eu/cgit.cgi/#{project}/commit/?id=#{sha}"
     end
 
     def author
