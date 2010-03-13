@@ -58,7 +58,7 @@ class CIJoe
 
       def cijoe_root
         root = request.path
-        root = "" if root == "/"
+        root = "/_ci" if root == "/"
         root
       end
     end
