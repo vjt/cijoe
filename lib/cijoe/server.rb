@@ -31,7 +31,7 @@ class CIJoe
       if payload.empty? || payload.include?(joe.git_branch)
         joe.build
       end
-      redirect request.path
+      redirect cijoe_root
     end
 
     user, pass = Config.cijoe.user.to_s, Config.cijoe.pass.to_s
